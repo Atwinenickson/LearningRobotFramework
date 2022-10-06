@@ -11,7 +11,7 @@ ${url}    https://demo.nopcommerce.com/
 *** Test Cases ***
 LoginTest
     ${chromedriver_path}=   chromedriversync.Get Chromedriver Path
-    Create Webdriver    Chrome   executable_path=${chromedriver_path}
+    Create Webdriver    ${browser}   executable_path=${chromedriver_path}
     Open Browser    ${url}    ${browser}
     loginToApplication
     Close Browser
