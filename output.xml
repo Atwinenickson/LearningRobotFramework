@@ -1,75 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20221007 12:14:53.924" rpa="false" schemaversion="3">
-<suite id="s1" name="Frame" source="/home/atwine/Nickson/ROBOT/robottest/Frame.robot">
-<test id="s1-t1" name="TestFrames" line="5">
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20221007 12:43:38.077" rpa="false" schemaversion="3">
+<suite id="s1" name="Tabbed" source="/home/atwine/Nickson/ROBOT/robottest/Tabbed.robot">
+<test id="s1-t1" name="TabbedWindowsTest" line="6">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://seleniumhq.github.io/selenium/docs/api/java/index</arg>
+<arg>https://demo.automationtesting.in/Windows.html</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221007 12:14:54.081" level="INFO">Opening browser 'Chrome' to base url 'https://seleniumhq.github.io/selenium/docs/api/java/index'.</msg>
-<status status="PASS" starttime="20221007 12:14:54.080" endtime="20221007 12:15:00.001"/>
+<msg timestamp="20221007 12:43:38.226" level="INFO">Opening browser 'Chrome' to base url 'https://demo.automationtesting.in/Windows.html'.</msg>
+<status status="PASS" starttime="20221007 12:43:38.225" endtime="20221007 12:43:44.160"/>
 </kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>packageListFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<msg timestamp="20221007 12:15:00.003" level="INFO">Selecting frame 'packageListFrame'.</msg>
-<msg timestamp="20221007 12:15:00.120" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20221007 12:15:00.120" level="FAIL">Element with locator 'packageListFrame' not found.</msg>
-<status status="FAIL" starttime="20221007 12:15:00.002" endtime="20221007 12:15:00.121"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://*[@id="Tabbed"]/a/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221007 12:43:44.162" level="INFO">Clicking element 'xpath://*[@id="Tabbed"]/a/button'.</msg>
+<status status="PASS" starttime="20221007 12:43:44.161" endtime="20221007 12:43:44.264"/>
 </kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>org.openqa.selenium</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221007 12:15:00.121" endtime="20221007 12:15:00.122"/>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>title=Selenium</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20221007 12:43:44.264" endtime="20221007 12:43:46.700"/>
 </kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="NOT RUN" starttime="20221007 12:15:00.122" endtime="20221007 12:15:00.122"/>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20221007 12:43:46.701" endtime="20221007 12:43:46.814"/>
 </kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>packageFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="NOT RUN" starttime="20221007 12:15:00.122" endtime="20221007 12:15:00.122"/>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath:/html/body/div/main/section[2]/div/div/div[1]/div/div[2]/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20221007 12:43:46.815" level="INFO">Clicking element 'xpath:/html/body/div/main/section[2]/div/div/div[1]/div/div[2]/div/a'.</msg>
+<status status="PASS" starttime="20221007 12:43:46.814" endtime="20221007 12:43:47.589"/>
 </kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>WebDriver</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221007 12:15:00.122" endtime="20221007 12:15:00.122"/>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20221007 12:43:50.590" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20221007 12:43:47.590" endtime="20221007 12:43:50.591"/>
 </kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="NOT RUN" starttime="20221007 12:15:00.123" endtime="20221007 12:15:00.123"/>
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20221007 12:43:50.591" endtime="20221007 12:43:50.663"/>
 </kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>classFrame</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<status status="NOT RUN" starttime="20221007 12:15:00.123" endtime="20221007 12:15:00.123"/>
-</kw>
-<kw name="Click Link" library="SeleniumLibrary">
-<arg>Help</arg>
-<doc>Clicks a link identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221007 12:15:00.123" endtime="20221007 12:15:00.123"/>
-</kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="NOT RUN" starttime="20221007 12:15:00.124" endtime="20221007 12:15:00.124"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" starttime="20221007 12:15:00.124" endtime="20221007 12:15:00.124"/>
-</kw>
-<status status="FAIL" starttime="20221007 12:14:54.079" endtime="20221007 12:15:00.125">Element with locator 'packageListFrame' not found.</status>
+<status status="PASS" starttime="20221007 12:43:38.224" endtime="20221007 12:43:50.663"/>
 </test>
-<status status="FAIL" starttime="20221007 12:14:53.925" endtime="20221007 12:15:00.126"/>
+<status status="PASS" starttime="20221007 12:43:38.079" endtime="20221007 12:43:50.667"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Frame">Frame</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Tabbed">Tabbed</stat>
 </suite>
 </statistics>
 <errors>
