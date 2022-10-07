@@ -1,87 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20221006 16:48:25.669" rpa="false" schemaversion="3">
-<suite id="s1" name="SpeedTests" source="/home/atwine/Nickson/ROBOT/robottest/SpeedTests.robot">
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20221007 10:44:48.260" rpa="false" schemaversion="3">
+<suite id="s1" name="Implicit" source="/home/atwine/Nickson/ROBOT/robottest/Implicit.robot">
 <test id="s1-t1" name="RegTest" line="5">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>http://demowebshop.tricentis.com/register</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221006 16:48:25.862" level="INFO">Opening browser 'Chrome' to base url 'http://demowebshop.tricentis.com/register'.</msg>
-<status status="PASS" starttime="20221006 16:48:25.862" endtime="20221006 16:48:29.861"/>
+<msg timestamp="20221007 10:44:48.413" level="INFO">Opening browser 'Chrome' to base url 'http://demowebshop.tricentis.com/register'.</msg>
+<status status="PASS" starttime="20221007 10:44:48.413" endtime="20221007 10:44:52.125"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221006 16:48:29.863" endtime="20221006 16:48:29.981"/>
+<status status="PASS" starttime="20221007 10:44:52.127" endtime="20221007 10:44:52.237"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>10</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20221006 16:48:39.982" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20221006 16:48:29.981" endtime="20221006 16:48:39.982"/>
-</kw>
-<kw name="Set Selenium Speed" library="SeleniumLibrary">
-<arg>5</arg>
-<doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20221006 16:48:39.983" endtime="20221006 16:48:39.985"/>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<arg>10 seconds</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" starttime="20221007 10:44:52.238" endtime="20221007 10:44:52.240"/>
 </kw>
 <kw name="Select Radio Button" library="SeleniumLibrary">
 <arg>Gender</arg>
 <arg>M</arg>
 <doc>Sets the radio button group ``group_name`` to ``value``.</doc>
-<msg timestamp="20221006 16:48:39.987" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
-<status status="PASS" starttime="20221006 16:48:39.986" endtime="20221006 16:48:55.133"/>
+<msg timestamp="20221007 10:44:52.240" level="INFO">Selecting 'M' from radio button 'Gender'.</msg>
+<status status="PASS" starttime="20221007 10:44:52.240" endtime="20221007 10:44:52.332"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:FirstName</arg>
 <arg>David</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221006 16:48:55.136" level="INFO">Typing text 'David' into text field 'name:FirstName'.</msg>
-<status status="PASS" starttime="20221006 16:48:55.134" endtime="20221006 16:49:10.337"/>
+<msg timestamp="20221007 10:44:52.333" level="INFO">Typing text 'David' into text field 'name:FirstName'.</msg>
+<status status="PASS" starttime="20221007 10:44:52.333" endtime="20221007 10:44:52.451"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:LastName</arg>
 <arg>JOhn</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221006 16:49:10.339" level="INFO">Typing text 'JOhn' into text field 'name:LastName'.</msg>
-<status status="PASS" starttime="20221006 16:49:10.338" endtime="20221006 16:49:25.537"/>
+<msg timestamp="20221007 10:44:52.451" level="INFO">Typing text 'JOhn' into text field 'name:LastName'.</msg>
+<status status="PASS" starttime="20221007 10:44:52.451" endtime="20221007 10:44:52.569"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>name:Email</arg>
 <arg>anch@gmail.com</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221006 16:49:25.539" level="INFO">Typing text 'anch@gmail.com' into text field 'name:Email'.</msg>
-<status status="PASS" starttime="20221006 16:49:25.537" endtime="20221006 16:49:40.731"/>
+<msg timestamp="20221007 10:44:52.570" level="INFO">Typing text 'anch@gmail.com' into text field 'name:Email'.</msg>
+<status status="PASS" starttime="20221007 10:44:52.569" endtime="20221007 10:44:52.713"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
 <arg>name:Password</arg>
 <arg>davidjohn</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221006 16:49:40.733" level="INFO">Typing password into text field 'name:Password'.</msg>
-<msg timestamp="20221006 16:49:50.813" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221006 16:49:55.885" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221006 16:49:40.732" endtime="20221006 16:49:55.885"/>
+<msg timestamp="20221007 10:44:52.714" level="INFO">Typing password into text field 'name:Password'.</msg>
+<msg timestamp="20221007 10:44:52.780" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20221007 10:44:52.836" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20221007 10:44:52.713" endtime="20221007 10:44:52.836"/>
 </kw>
 <kw name="Input Password" library="SeleniumLibrary">
-<arg>name:ConfirmPassword</arg>
+<arg>name:ConfirmPasswordd</arg>
 <arg>davidjohn</arg>
 <doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20221006 16:49:55.888" level="INFO">Typing password into text field 'name:ConfirmPassword'.</msg>
-<msg timestamp="20221006 16:50:05.997" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20221006 16:50:11.081" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20221006 16:49:55.886" endtime="20221006 16:50:11.081"/>
+<msg timestamp="20221007 10:44:52.836" level="INFO">Typing password into text field 'name:ConfirmPasswordd'.</msg>
+<msg timestamp="20221007 10:45:03.082" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221007 10:45:03.082" level="FAIL">Element with locator 'name:ConfirmPasswordd' not found.</msg>
+<status status="FAIL" starttime="20221007 10:44:52.836" endtime="20221007 10:45:03.084"/>
 </kw>
-<status status="PASS" starttime="20221006 16:48:25.861" endtime="20221006 16:50:11.082"/>
+<status status="FAIL" starttime="20221007 10:44:48.412" endtime="20221007 10:45:03.085">Element with locator 'name:ConfirmPasswordd' not found.</status>
 </test>
-<status status="PASS" starttime="20221006 16:48:25.670" endtime="20221006 16:50:11.087"/>
+<status status="FAIL" starttime="20221007 10:44:48.261" endtime="20221007 10:45:03.086"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="SpeedTests">SpeedTests</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Implicit">Implicit</stat>
 </suite>
 </statistics>
 <errors>
