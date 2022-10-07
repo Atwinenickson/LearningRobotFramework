@@ -1,99 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20221007 14:05:44.202" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.8.10 on linux)" generated="20221007 14:07:17.661" rpa="false" schemaversion="3">
 <suite id="s1" name="CaptureScreenshot" source="/home/atwine/Nickson/ROBOT/robottest/CaptureScreenshot.robot">
 <test id="s1-t1" name="LoginTC" line="6">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>https://opensource-demo.orangehrmlive.com/</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221007 14:05:44.338" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
-<status status="PASS" starttime="20221007 14:05:44.337" endtime="20221007 14:05:51.841"/>
+<msg timestamp="20221007 14:07:17.783" level="INFO">Opening browser 'Chrome' to base url 'https://opensource-demo.orangehrmlive.com/'.</msg>
+<status status="PASS" starttime="20221007 14:07:17.782" endtime="20221007 14:07:24.546"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20221007 14:05:51.841" endtime="20221007 14:05:51.954"/>
+<status status="PASS" starttime="20221007 14:07:24.547" endtime="20221007 14:07:24.655"/>
+</kw>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<arg>/home/atwine/Nickson/ROBOT/robottest/logoTc.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20221007 14:07:24.820" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="logoTc.png"&gt;&lt;img src="logoTc.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20221007 14:07:24.656" endtime="20221007 14:07:24.820"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://[@name="username"]</arg>
+<arg>xpath://*[@name="username"]</arg>
 <arg>Admin</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221007 14:05:51.957" level="INFO">Typing text 'Admin' into text field 'xpath://[@name="username"]'.</msg>
-<msg timestamp="20221007 14:05:52.168" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20221007 14:05:52.169" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //[@name="username"] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//[@name="username"]' is not a valid XPath expression.
-  (Session info: chrome=106.0.5249.91)
-Stacktrace:
-#0 0x5558233882c3 &lt;unknown&gt;
-#1 0x55582319183a &lt;unknown&gt;
-#2 0x5558231949d7 &lt;unknown&gt;
-#3 0x555823194877 &lt;unknown&gt;
-#4 0x555823194b3c &lt;unknown&gt;
-#5 0x5558231ca68f &lt;unknown&gt;
-#6 0x5558231cab61 &lt;unknown&gt;
-#7 0x555823202d51 &lt;unknown&gt;
-#8 0x5558231e8f6d &lt;unknown&gt;
-#9 0x555823200a50 &lt;unknown&gt;
-#10 0x5558231e8d63 &lt;unknown&gt;
-#11 0x5558231bd7e3 &lt;unknown&gt;
-#12 0x5558231bea21 &lt;unknown&gt;
-#13 0x5558233d618e &lt;unknown&gt;
-#14 0x5558233d9622 &lt;unknown&gt;
-#15 0x5558233bcaae &lt;unknown&gt;
-#16 0x5558233da2a3 &lt;unknown&gt;
-#17 0x5558233b0ecf &lt;unknown&gt;
-#18 0x5558233fa588 &lt;unknown&gt;
-#19 0x5558233fa706 &lt;unknown&gt;
-#20 0x5558234148b2 &lt;unknown&gt;
-#21 0x7f7dece31609 &lt;unknown&gt;
-</msg>
-<status status="FAIL" starttime="20221007 14:05:51.955" endtime="20221007 14:05:52.170"/>
+<msg timestamp="20221007 14:07:24.821" level="INFO">Typing text 'Admin' into text field 'xpath://*[@name="username"]'.</msg>
+<msg timestamp="20221007 14:07:24.976" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20221007 14:07:24.976" level="FAIL">Element with locator 'xpath://*[@name="username"]' not found.</msg>
+<status status="FAIL" starttime="20221007 14:07:24.820" endtime="20221007 14:07:24.977"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
-<arg>xpath://[@name="password"]</arg>
+<arg>xpath://*[@name="password"]</arg>
 <arg>admin123</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" starttime="20221007 14:05:52.170" endtime="20221007 14:05:52.170"/>
+<status status="NOT RUN" starttime="20221007 14:07:24.977" endtime="20221007 14:07:24.977"/>
 </kw>
 <kw name="Capture Element Screenshot" library="SeleniumLibrary">
 <arg>xpath://*[@id="divLogo"]/img</arg>
 <arg>/home/atwine/Nickson/ROBOT/robottest/logo.png</arg>
 <doc>Captures a screenshot from the element identified by ``locator`` and embeds it into log file.</doc>
-<status status="NOT RUN" starttime="20221007 14:05:52.170" endtime="20221007 14:05:52.170"/>
+<status status="NOT RUN" starttime="20221007 14:07:24.977" endtime="20221007 14:07:24.977"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <arg>/home/atwine/Nickson/ROBOT/robottest/logoTc.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="NOT RUN" starttime="20221007 14:05:52.171" endtime="20221007 14:05:52.171"/>
+<status status="NOT RUN" starttime="20221007 14:07:24.978" endtime="20221007 14:07:24.978"/>
 </kw>
-<status status="FAIL" starttime="20221007 14:05:44.336" endtime="20221007 14:05:52.171">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression //[@name="username"] because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//[@name="username"]' is not a valid XPath expression.
-  (Session info: chrome=106.0.5249.91)
-Stacktrace:
-#0 0x5558233882c3 &lt;unknown&gt;
-#1 0x55582319183a &lt;unknown&gt;
-#2 0x5558231949d7 &lt;unknown&gt;
-#3 0x555823194877 &lt;unknown&gt;
-#4 0x555823194b3c &lt;unknown&gt;
-#5 0x5558231ca68f &lt;unknown&gt;
-#6 0x5558231cab61 &lt;unknown&gt;
-#7 0x555823202d51 &lt;unknown&gt;
-#8 0x5558231e8f6d &lt;unknown&gt;
-#9 0x555823200a50 &lt;unknown&gt;
-#10 0x5558231e8d63 &lt;unknown&gt;
-#11 0x5558231bd7e3 &lt;unknown&gt;
-#12 0x5558231bea21 &lt;unknown&gt;
-#13 0x5558233d618e &lt;unknown&gt;
-#14 0x5558233d9622 &lt;unknown&gt;
-#15 0x5558233bcaae &lt;unknown&gt;
-#16 0x5558233da2a3 &lt;unknown&gt;
-#17 0x5558233b0ecf &lt;unknown&gt;
-#18 0x5558233fa588 &lt;unknown&gt;
-#19 0x5558233fa706 &lt;unknown&gt;
-#20 0x5558234148b2 &lt;unknown&gt;
-#21 0x7f7dece31609 &lt;unknown&gt;
-</status>
+<status status="FAIL" starttime="20221007 14:07:17.781" endtime="20221007 14:07:24.979">Element with locator 'xpath://*[@name="username"]' not found.</status>
 </test>
-<status status="FAIL" starttime="20221007 14:05:44.203" endtime="20221007 14:05:52.173"/>
+<status status="FAIL" starttime="20221007 14:07:17.662" endtime="20221007 14:07:24.980"/>
 </suite>
 <statistics>
 <total>
