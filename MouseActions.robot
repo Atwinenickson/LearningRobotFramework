@@ -15,3 +15,10 @@ MouseOperations
     Double Click Element    xpath://button[contains(text(), 'Copy Text')]
     Sleep    3
 
+    Go To    http://www.dhtmlgoodies.com/scripts/drag-drop-custom/demo-drag-drop-3.html
+    Maximize Browser Window
+    Drag And Drop    id:box6    id:box106
+    Sleep    5
+
+    Close Browser
+
